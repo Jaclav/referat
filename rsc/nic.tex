@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage[a4paper, total={16cm, 27cm}]{geometry}
+\usepackage{polski}
+
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, pdftitle={Overleaf Example}]{hyperref}
+\usepackage{todonotes}
+%\usepackage[disable]{todonotes}
+
+\author{Jacek Winiarczyk}
+\date{}
+\title{\Huge\textbf{Czy może istnieć nic?}}
+%start: 3 kw 2022 r.
+
+\begin{document}
+\maketitle
+
+\section{Wstęp}
+Czym jest nic? Wyobrażenie sobie obiektu wykonanego z niczego nie jest łatwe.
+Żeby wiedzieć gdzie jest \textbf{\textit{nic}} trzeba mieć wokół \textbf{\textit{coś}} dla porównania
+\footnote{Powrót do filozoficznego pytania „Dlaczego istnieje raczej coś niż nic?”}.
+Stworzenie takiego obiektu wydaje się natomiast łatwe~-~należy tylko zabrać materię z jego przestrzeni i tyle.
+Nic twórczego, a jednak wykonanie tego jest problematyczne.
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Problemy z \textit{niczym} w materialnym pojemniku}
+Stworzenie pustej przestrzeni, bez cząsteczek, czyli klasycznej \textbf{\textit{próżni}},
+wydaje się być banalne, należy wziąć wytrzymałą butlę,
+pompę i odessać powietrze. Jest próżnia - temat zamknięty?
+
+No nie. W normalnych warunkach (na poziomie morza) na ścianki butli naciska powietrze o sile 101~325N na metr kwadratowy.
+Gdyby zabrać powietrze z butli na ścianki od wewnątrz nie będzie działać żadna siła i
+cząsteczki butli będące w ciągłym ruchu zaczną się od butli odrywać i wypełniać w niej przestrzeń.
+
+Można pomyśleć że schłodzenie butli zmniejszy ruch cząstek i zaprzestanie ich odrywaniu.
+Jest to jednak niemożliwe ponieważ zgodnie z 3. zasadą termodynamiki otrzymanie temperatury 0~K
+(braku jakiegokolwiek ruchu) jest niewykonalne w skończonej liczbie kroków
+\footnote{$T\to 0$~K~$\Longleftrightarrow\Delta S \to 0\Longleftrightarrow W \to \infty$},
+więc zawsze będą istnieć odrywające się cząsteczki.
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Problemy ze skonstruowaniem próżni w Kosmosie}
+\todo[inline]{zanieczyszczenie orbity Ziemi, pył kosmiczny}
+Do każdego miejsca we wszechświecie dociera światło gwiazd, a jest ono energią. $E=hf=mc^2$.
+Powstaje pytanie czy ze słońca będącego na jednym końcu wszechśwta do obserwatora będącego na drugim dotarłaby wystarczająca ilość energii by zamienić się w masę i zaburzyć próżnię?
+
+Mierząc światło słoneczne spektrometrem można się dowiedzieć o długości fali i jej intensywności.
+
+\begin{figure}[H]
+	\centering
+	\caption{Zależność natężenia promieniowania od długośći fali światła słonecznego}
+	\includegraphics[scale=0.5]{spectrometer.jpg}
+	%{\tiny Żródło:~\url{https://www.researchgate.net/figure/Suns-spectrum-measured-through-a-spectrometer-The-spectrum-is-not-calibrated-in_fig4_325796516}}
+	{\tiny Żródło:~\url{https://fondriest.com/environmental-measurements/parameters/weather/photosynthetically-active-radiation/}}
+\end{figure}
+
+Najintensywniejszym kolorem śwtała słonecznego jest niebieskozielony o długości $\lambda \approx 500$nm.
+Podstawiając tę informację do wzoru Wiena otrzymuje się temperaturę fotosfery $T=\frac{b}{\lambda}\approx 5~796$~K.
+Ze wzoru Stefana-Boltzmanna wychodzi moc słońca na każdy jego metr kwadratowy $\Phi_{wyslane}=\sigma T^4\approx 63,9 \cdot 10^{6}\frac{W}{m^2}$.
+Przyjmując promień słońca za 696 000km otrzymuje się pole powierzchni A=$4\pi R^2\approx 6,087\cdot 10^{18}~m^2$.
+
+\todo[inline]{Poniższe wyliczenie są błędne}
+Z powyższych danych można policzyć z jaką mocą słońce promieniuje we wszystkich kierunkach $P=\Phi_{wyslane} A\approx 1,945\cdot 10^{29}$~W.
+Następnie należy policzyć ile tej mocy dociera do obserwatora na drugim krańcu wszechświata ($\diameter =8,8\cdot 10^{26}$~m).
+$\Phi_{odebrane}=\frac{P}{4\pi d^2}=\frac{\Phi_{wyslane} 4\pi R^2}{4\pi d^2}=\frac{\Phi_{wyslane} R^2}{d^2}=3,997\cdot 10^{-17} \frac{W}{m^2}$
+Przyjmując że obserwator ma 1 $m^2$ to w ciągu jednej sekundy dociera energia $E=\Phi_{odebrane}\cdot 1 m^2 \cdot 1s=3,997\cdot 10^{-17} J$
+%Ta jest w stanie zamienić się w masę $m=\frac{E}{c^2}=4,447\cdot10^{-34}$ kg.
+\todo[inline]{dopracuj, co z ubytkiem po drodze? Paradoks Olbersa}
+
+Oprócz energii Słońce (jak każda gwiazda) emituje neutrina. Jest to spowodowane cyklem protonowym,
+dzięki któremu gwiazda zamienia wodór w hel i energię.
+\todo[inline]{O neutrinach, bombardowanie, może o procesach w gwiazdach, ile np. słońce emituje neutrin}
+
+Tak też żeby w kosmosie było nic, wszędzie musi być nic, ponieważ gwiazda będąca na drugim końcu wszechświata jest w stanie zabużyć próżnię.
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Czy \textit{nic} jest względne?}
+\todo[inline]{O efekcie Unruha - dla stacjonarnego obserwatora w X może nie być cząsteczek, a dla poruszającego się z $v\approx c$ są}
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Czy \textit{nic} może wogóle istnieć?}
+\todo[inline]{o kwantowej próżni, o cząsteczkach wirtualnych, kreacji par, fale grawitacyjne}
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Czy możemy zmierzyć \textit{nicość} próżni?}
+Z zasady nieoznaczoności heisenberga:
+$$ \Delta x \Delta p_x \geq \frac{\hbar}{2} $$
+$$\therefore \Delta E \Delta t \geq \frac{\hbar}{2}$$
+$$\therefore \Delta mc^2 \Delta t \geq \frac{\hbar}{2}$$
+$$\therefore \Delta m \geq \frac{\hbar}{2c^2\Delta t}$$
+Oznacza to że możliwe jest określenie masy w obrębie próżni z niepewnością $\geq \frac{\hbar}{2c^2\Delta t}$\\
+Na przykład:
+
+Jedną z najmniejszych mas ma neutrino\footnote{Początkowo uważano że nie ma masy}
+$m=0,04 eV=7,13\cdot10^{-38}$kg.
+Gdy przyjmie się niepewność pomiaru masy rzędu masy neutrina,
+wtedy niepewność pomiaru czasu jest
+$\geq~\frac{\hbar}{2c^2\Delta m_{neutrino}}=8,228\cdot10^{-15}$s.
+Dla porównania czas połowicznego rozpadu $^{8}$Be~wynosi $81.9\cdot 10^{-18}$ s.
+
+Gdyby chcieć mierzyć czas z jedną z największych dokładności na przykład czasem Plancka\\
+$\Delta t_{min}=t_{Plancka}=\frac{l_{Plancka}}{c}=5,391\cdot10^{-44}$, to masę można określić z niepewnością
+$ \geq \frac{\hbar}{2c^2t_{Plancka}} = 1,088\cdot 10^{-8}kg$,
+dla porównania masa cząsteczki węgla wynosi $1,99\cdot10^{-26}$kg
+
+Powyższe przykłady pokazują że nie możliwe jest stwierdzenie czy próżnia jest napewno pusta.
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Podsumowanie}
+Wszystko ze wszystkim oddziałuje oraz nie istnieje ciało o $T=0~K$, przez to bezruch jest niemożliwy,
+a nawet gdyby go uzyskać przyroda nie pozwoli mu istnieć przez m.in. oddziaływanie grawitacyjne.
+A skoro bezruch jest niemożliwy to utworzenie a tym bardziej utrzymanie próżni idealnej jest niewykonalne,
+nie wspominając o kreacji par i ciągłym bombardowaniu neutrinami które nie ułatwiają zadania.
+Pomijając to wszystko,nawet gdyby mieć próżnie to nie da się być w pełni pewnym że nic w niej nie ma.
+%///////////////////////////////////////////////////////////////////////////////////
+
+\section{Bibliografia}
+Witold Mizerski „Tablice Fizyczno-Astronomiczne”\\
+Lewrence M. Krauss „Wszechświat z niczego”\\
+Andrzej Dragan „Kwantechizm”
+
+\tableofcontents
+\listoftodos
+
+\end{document}
