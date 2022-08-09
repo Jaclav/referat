@@ -75,18 +75,19 @@
 \newline
 
 \begin{tikzpicture}
-	\begin{axis}[xlabel={Temperatura}, ylabel={Energia}, scale=1, xmin=-0.5,xmax=2, domain=0:4,
-			extra x ticks={0}, extra x tick style={red},
+	\begin{axis}[xlabel={Temperatura, K}, ylabel={Energia}, scale=1, xmin=-0.5,xmax=2, domain=0:1,
+			ytick={0,3},xtick={0,3} ,extra x ticks={0}, extra x tick style={red},
 			%,xtick={3},xticklabels={$t^*$}
 		]
 
 		\addplot[very thick, black, domain=0:4] {
 			x >=0 ? x : 0
 		};
-		\addplot[black,very thick,red]{
-			1
+		\addplot[black,very thick,red,domain=0:4]{
+			x<= 1.4 ? x/4+1 : x
 		};
-
+		\draw[dashed, black] (0,-1) -- (0,2.5);
+		\draw[dashed, black] (-1,0) -- (3,0);
 	\end{axis}
 \end{tikzpicture}
 
