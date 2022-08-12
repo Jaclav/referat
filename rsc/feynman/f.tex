@@ -44,10 +44,10 @@
 		\vertex[above left=of a] (d) {$e^+$};
 
 		\diagram *{
-		(b) -- [photon, edge label=$\gamma$, momentum'={$\vec{p_0}=\vec{p_1}+\vec{p_2}$}] (a),
-		(a) -- [fermion, momentum'={$\vec{p_2}$}] (c),
+		(b) -- [photon, edge label=$\gamma$] (a),
+		(a) -- [fermion] (c),
 		(d) -- [fermion] (a),
-		(a) -- [momentum={$\vec{p_1}$}](d)
+		(a) -- [](d)
 		};
 
 	\end{feynman}

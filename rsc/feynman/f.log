@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2022.8.8)  8 AUG 2022 13:06
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2022.8.8)  12 AUG 2022 22:26
  restricted system commands enabled.
 **f.tex
 (./f.tex
@@ -754,13 +754,13 @@ xpression failed. Using TeX version. (plot 1).
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./f.aux))
 
 Here is how much of LuaTeX's memory you used:
- 28079 strings out of 477805
+ 28078 strings out of 477805
  125016,1373583 words of node,token memory allocated
  486 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 51 glue_spec,
  7 attribute_list, 2 write nodes
-   avail lists: 1:9,2:4384,3:2105,4:48,5:50,6:7,7:2710,8:9,9:762,11:11
- 47827 multiletter control sequences out of 65536+600000
+   avail lists: 1:8,2:4090,3:1973,4:48,5:40,6:7,7:2498,8:7,9:662,11:11
+ 47826 multiletter control sequences out of 65536+600000
  33 fonts using 1839919 bytes
  114i,10n,111p,721b,1979s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/tex
@@ -770,7 +770,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb>
-Output written on f.pdf (2 pages, 53901 bytes).
+Output written on f.pdf (2 pages, 53385 bytes).
 
 PDF statistics: 45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
